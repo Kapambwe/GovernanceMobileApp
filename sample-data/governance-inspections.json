@@ -1,0 +1,151 @@
+[
+  {
+    "inspectionId": "INSP-2026-0101",
+    "projectId": "PROJ-CDF-001",
+    "projectName": "Chongwe West Secondary School Classroom Block Construction",
+    "constituencyName": "Chongwe Constituency",
+    "wardName": "Chongwe Central Ward",
+    "inspectorId": "GOV-OFF-08",
+    "inspectorName": "Eng. Banda Mulenga",
+    "inspectorPhone": "+260 977 444 888",
+    "inspectorDesignation": "Council Inspection Engineer",
+    "contractorName": "Zambia Building Construction Ltd",
+    "stageName": "Roof Structure & Slab Verification",
+    "allocatedBudget": 450000.0,
+    "spentAmount": 280000.0,
+    "completionPercentage": 65,
+    "scheduledDate": "2026-09-24",
+    "windowStart": "09:00:00",
+    "windowEnd": "11:30:00",
+    "inspectorEta": "2026-09-24T09:40:00+02:00",
+    "lastLocationUpdatedAt": "2026-09-24T08:50:00+02:00",
+    "status": "EnRoute",
+    "verificationStatus": "Pending Verification",
+    "technicalRemarks": "Substructure and walling passed. Verifying timber truss span & roofing sheets.",
+    "stageChecklist": [
+      {
+        "stageId": "STG-101",
+        "stageName": "Foundation & Substructure",
+        "description": "Concrete slab strength test & foundation depth inspection",
+        "isComplete": true,
+        "isRequired": true,
+        "remarks": "Cube test 25 N/mm2 passed"
+      },
+      {
+        "stageId": "STG-102",
+        "stageName": "Roof Truss Installation",
+        "description": "Inspect timber truss spacing & hurricane tie anchors",
+        "isComplete": false,
+        "isRequired": true,
+        "remarks": ""
+      }
+    ],
+    "followUps": [
+      {
+        "followUpId": "FOL-GOV-01",
+        "inspectionId": "INSP-2026-0101",
+        "description": "Contractor to supply structural timber quality certificate",
+        "owner": "Contractor",
+        "dueDate": "2026-09-27",
+        "status": "Open"
+      }
+    ],
+    "evidence": [],
+    "lastServerUpdateAt": "2026-09-24T08:50:00+02:00",
+    "eTag": "insp-101-v3"
+  },
+  {
+    "inspectionId": "INSP-2026-0102",
+    "projectId": "PROJ-CDF-004",
+    "projectName": "Mwapona Rural Health Post Borehole & Water Reticulation",
+    "constituencyName": "Chongwe Constituency",
+    "wardName": "Mwapona Ward",
+    "inspectorId": "GOV-OFF-08",
+    "inspectorName": "Eng. Banda Mulenga",
+    "inspectorPhone": "+260 977 444 888",
+    "inspectorDesignation": "Council Inspection Engineer",
+    "contractorName": "AquaDrill Zambia Ltd",
+    "stageName": "Borehole Yield Testing & Solar Pump Installation",
+    "allocatedBudget": 180000.0,
+    "spentAmount": 165000.0,
+    "completionPercentage": 90,
+    "scheduledDate": "2026-09-25",
+    "windowStart": "11:00:00",
+    "windowEnd": "13:00:00",
+    "inspectorEta": null,
+    "lastLocationUpdatedAt": null,
+    "status": "Assigned",
+    "verificationStatus": "Pending Verification",
+    "technicalRemarks": "Pump installed. Pumping test yield log required before commissioning.",
+    "stageChecklist": [
+      {
+        "stageId": "STG-201",
+        "stageName": "Drilling & Casing",
+        "description": "Borehole depth 65m & PVC casing integrity",
+        "isComplete": true,
+        "isRequired": true,
+        "remarks": "Clean water strike reached at 58m"
+      },
+      {
+        "stageId": "STG-202",
+        "stageName": "24-hr Constant Rate Test",
+        "description": "Drawdown & recovery yield logging",
+        "isComplete": false,
+        "isRequired": true,
+        "remarks": ""
+      }
+    ],
+    "followUps": [],
+    "evidence": [],
+    "lastServerUpdateAt": "2026-09-23T16:00:00+02:00",
+    "eTag": "insp-102-v1"
+  },
+  {
+    "inspectionId": "INSP-2026-0098",
+    "projectId": "PROJ-CDF-002",
+    "projectName": "Chongwe Central Market Ablution Block Renovation",
+    "constituencyName": "Chongwe Constituency",
+    "wardName": "Chongwe Central Ward",
+    "inspectorId": "GOV-OFF-08",
+    "inspectorName": "Eng. Banda Mulenga",
+    "inspectorPhone": "+260 977 444 888",
+    "inspectorDesignation": "Council Inspection Engineer",
+    "contractorName": "Civic Works Zambia Ltd",
+    "stageName": "Final Plumbing & Fixtures Certification",
+    "allocatedBudget": 120000.0,
+    "spentAmount": 120000.0,
+    "completionPercentage": 100,
+    "scheduledDate": "2026-09-21",
+    "windowStart": "14:00:00",
+    "windowEnd": "16:00:00",
+    "inspectorEta": null,
+    "lastLocationUpdatedAt": null,
+    "status": "Completed",
+    "verificationStatus": "Passed & Certified",
+    "technicalRemarks": "Inspection complete. All sanitary fittings installed, tested under water pressure, passed certification.",
+    "stageChecklist": [
+      {
+        "stageId": "STG-301",
+        "stageName": "Plumbing Pressure Test",
+        "description": "Water pressure & sewer connection inspection",
+        "isComplete": true,
+        "isRequired": true,
+        "remarks": "No leaks detected"
+      }
+    ],
+    "followUps": [],
+    "evidence": [
+      {
+        "evidenceId": "EVI-GOV-001",
+        "fileName": "ablution_block_certification.jpg",
+        "contentType": "image/jpeg",
+        "storageReference": "storage/inspections/INSP-2026-0098/cert_001.jpg",
+        "sha256": "f4c2807e38e83344a19b88496bf2848b6c4b2b9188e404b9015bc2f114c00d44",
+        "capturedAt": "2026-09-21T15:30:00+02:00",
+        "capturedBy": "Eng. Banda Mulenga"
+      }
+    ],
+    "lastServerUpdateAt": "2026-09-21T16:05:00+02:00",
+    "eTag": "insp-98-v5"
+  }
+]

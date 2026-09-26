@@ -1,0 +1,221 @@
+:root {
+    --rz-primary: #0f172a;
+    --rz-primary-lighter: #f1f5f9;
+    --rz-secondary: #475569;
+    --rz-success: #10b981;
+    --rz-danger: #ef4444;
+    --rz-warning: #f59e0b;
+    --fieldops-touch-target: 40px;
+    --fieldops-navy-primary: #0f172a;
+    --fieldops-navy-dark: #081225;
+    --fieldops-card-border: #e2e8f0;
+    --fieldops-button-font-size: 0.85rem;
+    --fieldops-button-font-size-xs: 0.75rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+.rz-body {
+    background-color: #f8fafc !important;
+    color: #0f172a;
+}
+
+/* Touch Ergonomics & Inputs */
+.rz-button, .rz-textbox, .rz-dropdown, button {
+    min-height: var(--fieldops-touch-target);
+}
+
+.rz-button-text {
+    font-weight: 600;
+}
+
+/* Executive Header Styling */
+.executive-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* FieldOps Standard Card Background Surface */
+.rz-card, .stat-card {
+    background: #ffffff;
+    border-radius: 16px !important;
+    border: 1px solid var(--fieldops-card-border);
+    box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.04), 0 2px 4px -2px rgba(15, 23, 42, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rz-card:hover, .stat-card:hover {
+    box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.08);
+}
+
+/* Mobile Bottom Navigation Bar */
+.mobile-nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    width: 25%;
+    transition: all 0.2s ease;
+}
+
+.mobile-nav-item.active, .mobile-nav-item:hover {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.mobile-nav-item i {
+    font-size: 1.35rem;
+    margin-bottom: 2px;
+}
+
+/* User Overlay & Menu */
+.fieldops-user-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1100;
+    background: rgba(15, 23, 42, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.fieldops-user-menu {
+    position: absolute;
+    top: 56px;
+    right: 12px;
+    width: 280px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    z-index: 1101;
+    overflow: hidden;
+}
+
+.loading-progress {
+    position: absolute;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    inset: 20vh 0 auto 0;
+    margin: 0 auto 0 auto;
+}
+
+    .loading-progress circle {
+        fill: none;
+        stroke: #e0e0e0;
+        stroke-width: 0.6rem;
+        transform-origin: 50% 50%;
+        transform: rotate(-90deg);
+    }
+
+        .loading-progress circle:last-child {
+            stroke: #1b6ec2;
+            stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
+            transition: stroke-dasharray 0.05s ease-in-out;
+        }
+
+.loading-progress-text {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
+}
+
+    .loading-progress-text:after {
+        content: var(--blazor-load-percentage-text, "Loading");
+    }
+
+code {
+    color: #c02d76;
+}
+
+/* Radzen Dropdown High Contrast & Popup Visibility Fix */
+.rz-dropdown {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 6px !important;
+}
+
+.rz-dropdown-label {
+    color: #0f172a !important;
+}
+
+.rz-dropdown-panel, .rz-dropdown-items-wrapper, div[id*="popup"] {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25) !important;
+    border: 1px solid #cbd5e1 !important;
+    z-index: 2000 !important;
+}
+
+.rz-dropdown-item {
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+    padding: 0.5rem 0.75rem !important;
+}
+
+.rz-dropdown-item:hover, .rz-dropdown-item.rz-state-highlight {
+    background-color: #e2e8f0 !important;
+    color: #0f172a !important;
+}
+
+/* Dark Flyout Drawer Dropdown Specific Override */
+.fieldops-inform-flyout .rz-dropdown {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border: 1px solid #475569 !important;
+}
+
+.fieldops-inform-flyout .rz-dropdown-label {
+    color: #ffffff !important;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
+
+#blazor-error-ui {
+    display: none;
+}
+
+#blazor-error-ui.show, #blazor-error-ui[style*="display: block"] {
+    display: block !important;
+}
